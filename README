@@ -1,8 +1,5 @@
-NAME
-    Pod::Wordlist::hanekomu - Add words for spell checking POD
-
 VERSION
-    version 1.100860
+    version 1.102250
 
 SYNOPSIS
         use Test::Spelling;
@@ -21,8 +18,7 @@ BUGS AND LIMITATIONS
     No bugs have been reported.
 
     Please report any bugs or feature requests through the web interface at
-    <http://rt.cpan.org/Public/Dist/Display.html?Name=Pod-Wordlist-hanekomu>
-    .
+    <http://rt.cpan.org>.
 
 AVAILABILITY
     The latest version of this module is available from the Comprehensive
@@ -36,7 +32,7 @@ AVAILABILITY
     infrastructure.
 
 AUTHOR
-      Marcel Gruenauer <marcel@cpan.org>
+    Marcel Gruenauer <marcel@cpan.org>
 
 COPYRIGHT AND LICENSE
     This software is copyright (c) 2009 by Marcel Gruenauer.

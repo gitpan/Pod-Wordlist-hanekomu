@@ -3,9 +3,12 @@ use strict;
 use warnings;
 
 package Pod::Wordlist::hanekomu;
-our $VERSION = '1.100860';
+BEGIN {
+  $Pod::Wordlist::hanekomu::VERSION = '1.102250';
+}
 # ABSTRACT: Add words for spell checking POD
 use Test::Spelling;
+set_spell_cmd 'aspell list';
 use utf8;
 our @person_names = qw(
   Achim
@@ -63,6 +66,7 @@ our @tech_names = qw(
   README
   ShipIt
   Spiffy
+  SQL
   STDIN
   STDOUT
   STDERR
@@ -80,6 +84,7 @@ our @stopwords = qw(
   adaptee
   adaptees
   administrativa
+  afterwards
   array's
   backend
   behaviour
@@ -100,6 +105,7 @@ our @stopwords = qw(
   dotfile
   dotfiles
   filename
+  filenames
   formatter
   github
   hash's
@@ -109,6 +115,8 @@ our @stopwords = qw(
   init
   japanese
   Joseki
+  lookup
+  lookups
   kwalitee
   marshalling
   metadata
@@ -118,8 +126,11 @@ our @stopwords = qw(
   monkeypatches
   monkeypatching
   munge
+  munger
+  munging
   namespace
   namespaces
+  nestable
   ok
   op
   pipe's
@@ -139,6 +150,7 @@ our @stopwords = qw(
   shipit
   startup
   storable
+  storages
   stopword
   stopwords
   stringification
@@ -156,6 +168,7 @@ our @stopwords = qw(
   username
   uuid
   value's
+  variable's
   wellformedness
   whitelist
   whitelists
@@ -176,13 +189,9 @@ $ENV{LANG} = 'C';
 __END__
 =pod
 
-=head1 NAME
-
-Pod::Wordlist::hanekomu - Add words for spell checking POD
-
 =head1 VERSION
 
-version 1.100860
+version 1.102250
 
 =head1 SYNOPSIS
 
@@ -204,7 +213,7 @@ See perlmodinstall for information and options on installing Perl modules.
 No bugs have been reported.
 
 Please report any bugs or feature requests through the web interface at
-L<http://rt.cpan.org/Public/Dist/Display.html?Name=Pod-Wordlist-hanekomu>.
+L<http://rt.cpan.org>.
 
 =head1 AVAILABILITY
 
@@ -220,7 +229,7 @@ and github infrastructure.
 
 =head1 AUTHOR
 
-  Marcel Gruenauer <marcel@cpan.org>
+Marcel Gruenauer <marcel@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
