@@ -40,7 +40,7 @@
    "provides" : {
       "Pod::Wordlist::hanekomu" : {
          "file" : "lib/Pod/Wordlist/hanekomu.pm",
-         "version" : "1.102250"
+         "version" : "1.102340"
       }
    },
    "release_status" : "stable",
@@ -54,6 +54,6 @@
          "url" : "http://github.com/hanekomu/Pod-Wordlist-hanekomu"
       }
    },
-   "version" : "1.102250"
+   "version" : "1.102340"
 }
 

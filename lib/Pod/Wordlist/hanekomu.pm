@@ -4,7 +4,7 @@ use warnings;
 
 package Pod::Wordlist::hanekomu;
 BEGIN {
-  $Pod::Wordlist::hanekomu::VERSION = '1.102250';
+  $Pod::Wordlist::hanekomu::VERSION = '1.102340';
 }
 # ABSTRACT: Add words for spell checking POD
 use Test::Spelling;
@@ -24,6 +24,7 @@ our @person_names = qw(
   Hofstetter
   Marcel
   Mark
+  Metheringham
   Miyagawa
   Ran
   Ricardo
@@ -189,9 +190,13 @@ $ENV{LANG} = 'C';
 __END__
 =pod
 
+=head1 NAME
+
+Pod::Wordlist::hanekomu - Add words for spell checking POD
+
 =head1 VERSION
 
-version 1.102250
+version 1.102340
 
 =head1 SYNOPSIS
 
@@ -219,13 +224,12 @@ L<http://rt.cpan.org>.
 
 The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
-site near you, or see
-L<http://search.cpan.org/dist/Pod-Wordlist-hanekomu/>.
+site near you, or see L<http://search.cpan.org/dist/Pod-Wordlist-hanekomu/>.
 
-The development version lives at
-L<http://github.com/hanekomu/Pod-Wordlist-hanekomu/>.
-Instead of sending patches, please fork this project using the standard git
-and github infrastructure.
+The development version lives at L<http://github.com/hanekomu/Pod-Wordlist-hanekomu>
+and may be cloned from L<git://github.com/hanekomu/Pod-Wordlist-hanekomu>.
+Instead of sending patches, please fork this project using the standard
+git and github infrastructure.
 
 =head1 AUTHOR
 

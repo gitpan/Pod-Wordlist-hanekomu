@@ -1,5 +1,8 @@
+NAME
+    Pod::Wordlist::hanekomu - Add words for spell checking POD
+
 VERSION
-    version 1.102250
+    version 1.102340
 
 SYNOPSIS
         use Test::Spelling;
@@ -27,9 +30,10 @@ AVAILABILITY
     <http://search.cpan.org/dist/Pod-Wordlist-hanekomu/>.
 
     The development version lives at
-    <http://github.com/hanekomu/Pod-Wordlist-hanekomu/>. Instead of sending
-    patches, please fork this project using the standard git and github
-    infrastructure.
+    <http://github.com/hanekomu/Pod-Wordlist-hanekomu> and may be cloned
+    from <git://github.com/hanekomu/Pod-Wordlist-hanekomu>. Instead of
+    sending patches, please fork this project using the standard git and
+    github infrastructure.
 
 AUTHOR
     Marcel Gruenauer <marcel@cpan.org>
