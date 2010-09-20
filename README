@@ -2,7 +2,7 @@ NAME
     Pod::Wordlist::hanekomu - Add words for spell checking POD
 
 VERSION
-    version 1.102340
+    version 1.102630
 
 SYNOPSIS
         use Test::Spelling;
