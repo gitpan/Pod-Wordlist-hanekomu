@@ -4,7 +4,7 @@ use warnings;
 
 package Pod::Wordlist::hanekomu;
 BEGIN {
-  $Pod::Wordlist::hanekomu::VERSION = '1.102640';
+  $Pod::Wordlist::hanekomu::VERSION = '1.110090';
 }
 # ABSTRACT: Add words for spell checking POD
 use Test::Spelling;
@@ -14,7 +14,10 @@ our @person_names = qw(
   Achim
   Adam
   Conway
+  Cushing
   Damian
+  Doherty
+  Doran
   Eilam
   Ekker
   Florian
@@ -92,6 +95,8 @@ our @stopwords = qw(
   benchmarked
   blog
   blogs
+  breakpoint
+  breakpoints
   bugtracker
   bundle's
   callback
@@ -102,6 +107,7 @@ our @stopwords = qw(
   configurator
   configurators
   crosscutting
+  debugger's
   denormalized
   distname
   dotfile
@@ -200,7 +206,7 @@ Pod::Wordlist::hanekomu - Add words for spell checking POD
 
 =head1 VERSION
 
-version 1.102640
+version 1.110090
 
 =head1 SYNOPSIS
 
@@ -222,7 +228,7 @@ See perlmodinstall for information and options on installing Perl modules.
 No bugs have been reported.
 
 Please report any bugs or feature requests through the web interface at
-L<http://rt.cpan.org>.
+L<http://rt.cpan.org/Public/Dist/Display.html?Name=Pod-Wordlist-hanekomu>.
 
 =head1 AVAILABILITY
 
@@ -230,8 +236,8 @@ The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
 site near you, or see L<http://search.cpan.org/dist/Pod-Wordlist-hanekomu/>.
 
-The development version lives at L<http://github.com/hanekomu/Pod-Wordlist-hanekomu>
-and may be cloned from L<git://github.com/hanekomu/Pod-Wordlist-hanekomu>.
+The development version lives at L<http://github.com/hanekomu/Pod-Wordlist-hanekomu.git>
+and may be cloned from L<git://github.com/hanekomu/Pod-Wordlist-hanekomu.git>.
 Instead of sending patches, please fork this project using the standard
 git and github infrastructure.
 

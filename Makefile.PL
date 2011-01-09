@@ -30,7 +30,7 @@ my %WriteMakefileArgs = (
     'Test::Spelling' => '0',
     'utf8' => '0'
   },
-  'VERSION' => '1.102640',
+  'VERSION' => '1.110090',
   'test' => {
     'TESTS' => 't/*.t'
   }
