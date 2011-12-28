@@ -3,8 +3,8 @@ use strict;
 use warnings;
 
 package Pod::Wordlist::hanekomu;
-BEGIN {
-  $Pod::Wordlist::hanekomu::VERSION = '1.110090';
+{
+  $Pod::Wordlist::hanekomu::VERSION = '1.113620';
 }
 # ABSTRACT: Add words for spell checking POD
 use Test::Spelling;
@@ -25,6 +25,7 @@ our @person_names = qw(
   Heinz
   Helmberger
   Hofstetter
+  Lapworth
   Marcel
   Mark
   Metheringham
@@ -77,6 +78,7 @@ our @tech_names = qw(
   svk
   TIMTOWTDI
   Unicode
+  UTF
   URI
   URIs
   W3CDTF
@@ -89,6 +91,8 @@ our @stopwords = qw(
   adaptees
   administrativa
   afterwards
+  aggregator
+  aggregators
   array's
   backend
   behaviour
@@ -153,12 +157,16 @@ our @stopwords = qw(
   pointcuts
   prepends
   preprocessed
+  probe's
   redispatch
   reusability
   ref
+  runtime
   san
+  seekable
   segment's
   shipit
+  sigils
   startup
   storable
   storages
@@ -206,7 +214,7 @@ Pod::Wordlist::hanekomu - Add words for spell checking POD
 
 =head1 VERSION
 
-version 1.110090
+version 1.113620
 
 =head1 SYNOPSIS
 
@@ -236,7 +244,7 @@ The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
 site near you, or see L<http://search.cpan.org/dist/Pod-Wordlist-hanekomu/>.
 
-The development version lives at L<http://github.com/hanekomu/Pod-Wordlist-hanekomu.git>
+The development version lives at L<http://github.com/hanekomu/Pod-Wordlist-hanekomu>
 and may be cloned from L<git://github.com/hanekomu/Pod-Wordlist-hanekomu.git>.
 Instead of sending patches, please fork this project using the standard
 git and github infrastructure.

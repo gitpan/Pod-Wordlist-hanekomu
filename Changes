@@ -1,5 +1,9 @@
 Revision history for Perl extension Pod-Wordlist-hanekomu
 
+1.113620  2011-12-28 22:25:25 Europe/Vienna
+    - added "Lapworth", "UTF", "aggregator", "aggregators", "probe's",
+      "runtime", "seekable" and "sigils"
+
 1.110090  2011-01-09 12:39:53 Europe/Vienna
     - added "breakpoint", "breakpoints", "debugger's"
     - also added author names "Cushing", "Doherty", "Doran".

@@ -4,7 +4,7 @@
       "Marcel Gruenauer <marcel@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.200000, CPAN::Meta::Converter version 2.102400",
+   "generated_by" : "Dist::Zilla version 4.300005, CPAN::Meta::Converter version 2.112621",
    "license" : [
       "perl_5"
    ],
@@ -16,14 +16,16 @@
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "6.31"
+            "ExtUtils::MakeMaker" : "6.30"
          }
       },
       "runtime" : {
          "requires" : {
             "Test::Spelling" : 0,
             "perl" : "5.008",
-            "utf8" : 0
+            "strict" : 0,
+            "utf8" : 0,
+            "warnings" : 0
          }
       },
       "test" : {
@@ -40,7 +42,7 @@
    "provides" : {
       "Pod::Wordlist::hanekomu" : {
          "file" : "lib/Pod/Wordlist/hanekomu.pm",
-         "version" : "1.110090"
+         "version" : "1.113620"
       }
    },
    "release_status" : "stable",
@@ -56,6 +58,6 @@
          "web" : "http://github.com/hanekomu/Pod-Wordlist-hanekomu"
       }
    },
-   "version" : "1.110090"
+   "version" : "1.113620"
 }
 
