@@ -1,10 +1,11 @@
 {
    "abstract" : "Add words for spell checking POD",
    "author" : [
-      "Marcel Gruenauer <marcel@cpan.org>"
+      "Marcel Gruenauer <marcel@cpan.org>",
+      "David Golden <dagolden@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300005, CPAN::Meta::Converter version 2.112621",
+   "generated_by" : "Dist::Zilla version 4.300009, CPAN::Meta::Converter version 2.120630",
    "license" : [
       "perl_5"
    ],
@@ -21,28 +22,29 @@
       },
       "runtime" : {
          "requires" : {
-            "Test::Spelling" : 0,
+            "Test::Spelling" : "0",
             "perl" : "5.008",
-            "strict" : 0,
-            "utf8" : 0,
-            "warnings" : 0
+            "strict" : "0",
+            "utf8" : "0",
+            "warnings" : "0"
          }
       },
       "test" : {
          "requires" : {
-            "Carp" : 0,
-            "English" : 0,
-            "File::Find" : 0,
-            "File::Temp" : 0,
-            "Scalar::Util" : 0,
-            "Test::More" : "0.94"
+            "Carp" : "0",
+            "English" : "0",
+            "File::Find" : "0",
+            "File::Temp" : "0",
+            "Scalar::Util" : "0",
+            "Test::More" : "0.94",
+            "Test::Requires" : "0"
          }
       }
    },
    "provides" : {
       "Pod::Wordlist::hanekomu" : {
          "file" : "lib/Pod/Wordlist/hanekomu.pm",
-         "version" : "1.113620"
+         "version" : "1.120740"
       }
    },
    "release_status" : "stable",
@@ -51,13 +53,13 @@
          "mailto" : "bug-pod-wordlist-hanekomu at rt.cpan.org",
          "web" : "http://rt.cpan.org/Public/Dist/Display.html?Name=Pod-Wordlist-hanekomu"
       },
-      "homepage" : "http://search.cpan.org/dist/Pod-Wordlist-hanekomu/",
+      "homepage" : "https://metacpan.org/module/Pod::Wordlist::hanekomu/",
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/hanekomu/Pod-Wordlist-hanekomu.git",
-         "web" : "http://github.com/hanekomu/Pod-Wordlist-hanekomu"
+         "url" : "git://github.com/dagolden/Pod-Wordlist-hanekomu.git",
+         "web" : "http://github.com/dagolden/Pod-Wordlist-hanekomu"
       }
    },
-   "version" : "1.113620"
+   "version" : "1.120740"
 }
 

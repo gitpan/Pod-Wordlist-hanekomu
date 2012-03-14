@@ -4,7 +4,7 @@ use warnings;
 
 package Pod::Wordlist::hanekomu;
 {
-  $Pod::Wordlist::hanekomu::VERSION = '1.113620';
+  $Pod::Wordlist::hanekomu::VERSION = '1.120740';
 }
 # ABSTRACT: Add words for spell checking POD
 use Test::Spelling;
@@ -42,26 +42,37 @@ our @tech_names = qw(
   API
   AspectJ
   Babelfish
-  CPAN
+  CamelCase
   Coro
+  CPAN
+  CPANPLUS
   DateTime
-  Django
   DBI
+  Django
   DSL
+  EINTR
   EPP
-  FirePHP
   Firefox
+  FirePHP
   FIXME
   GraphViz
+  GUID
   HTTP
+  HTTPS
+  IETF
   IP
   IPv4
   IPv6
-  MVC
+  IRC
+  ISP
+  ISP's
+  JSON
   MakeMaker
   Markdown
-  mkdn
   Middleware
+  mkdn
+  modulino
+  MVC
   OO
   OOP
   PARC
@@ -70,18 +81,23 @@ our @tech_names = qw(
   PSGI
   README
   ShipIt
+  SMTP
   Spiffy
   SQL
+  SSL
+  STDERR
   STDIN
   STDOUT
-  STDERR
   svk
   TIMTOWTDI
   Unicode
-  UTF
   URI
+  URI's
   URIs
+  UTC
+  UTF
   W3CDTF
+  wiki
   XS
   YAML
   YAML's
@@ -93,6 +109,7 @@ our @stopwords = qw(
   afterwards
   aggregator
   aggregators
+  analyses
   array's
   backend
   behaviour
@@ -108,6 +125,7 @@ our @stopwords = qw(
   callee
   chomp
   chomps
+  chunked
   configurator
   configurators
   crosscutting
@@ -127,9 +145,10 @@ our @stopwords = qw(
   init
   japanese
   Joseki
+  kwalitee
+  locator
   lookup
   lookups
-  kwalitee
   marshalling
   metadata
   middleware
@@ -158,9 +177,10 @@ our @stopwords = qw(
   prepends
   preprocessed
   probe's
+  redirections
   redispatch
-  reusability
   ref
+  reusability
   runtime
   san
   seekable
@@ -168,18 +188,19 @@ our @stopwords = qw(
   shipit
   sigils
   startup
-  storable
-  storages
   stopword
   stopwords
+  storable
+  storages
   stringification
   stringifications
   stringifies
   stringify
-  subdirectory
   subdirectories
+  subdirectory
   subobjects
   terminal's
+  timestamp
   tokenizes
   toolchain
   unblessed
@@ -188,13 +209,13 @@ our @stopwords = qw(
   uuid
   value's
   variable's
+  vim
   wellformedness
   whitelist
   whitelists
   workflow
   workflows
   wormhole
-  vim
   yml
 );
 
@@ -214,7 +235,7 @@ Pod::Wordlist::hanekomu - Add words for spell checking POD
 
 =head1 VERSION
 
-version 1.113620
+version 1.120740
 
 =head1 SYNOPSIS
 
@@ -224,8 +245,12 @@ version 1.113620
 
 =head1 DESCRIPTION
 
-This module, when loaded, adds stopwords for POD spell checking, that is,
-words that should be ignored by the spell check.
+When loaded, this module automatically adds Test::Spelling stopwords for POD
+spell checking, that is, words that should be ignored by the spell check.
+
+The stopword list includes some CPAN author names, technical terms (e.g.  JSON,
+URI) and other commonly-used words not included in the default word list (e.g.
+mixin, munging).
 
 =head1 INSTALLATION
 
@@ -233,25 +258,28 @@ See perlmodinstall for information and options on installing Perl modules.
 
 =head1 BUGS AND LIMITATIONS
 
-No bugs have been reported.
-
-Please report any bugs or feature requests through the web interface at
-L<http://rt.cpan.org/Public/Dist/Display.html?Name=Pod-Wordlist-hanekomu>.
+You can make new bug reports, and view existing ones, through the
+web interface at L<http://rt.cpan.org/Public/Dist/Display.html?Name=Pod-Wordlist-hanekomu>.
 
 =head1 AVAILABILITY
 
 The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
-site near you, or see L<http://search.cpan.org/dist/Pod-Wordlist-hanekomu/>.
+site near you, or see L<https://metacpan.org/module/Pod::Wordlist::hanekomu/>.
 
-The development version lives at L<http://github.com/hanekomu/Pod-Wordlist-hanekomu>
-and may be cloned from L<git://github.com/hanekomu/Pod-Wordlist-hanekomu.git>.
-Instead of sending patches, please fork this project using the standard
-git and github infrastructure.
+=head1 AUTHORS
 
-=head1 AUTHOR
+=over 4
+
+=item *
 
 Marcel Gruenauer <marcel@cpan.org>
+
+=item *
+
+David Golden <dagolden@cpan.org>
+
+=back
 
 =head1 COPYRIGHT AND LICENSE
 
