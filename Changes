@@ -1,12 +1,12 @@
 Revision history for Perl extension Pod-Wordlist-hanekomu
 
-1.120920  2012-04-01 11:53:06 Europe/Paris
-    - added: prereq(s), pre, precompute, symlinked
+1.121230  2012-05-02 15:57:56 America/New_York
+
+    - added "deserialized", "parameterizable", "pre", "precompute",
+      "precomputes", "symlinked"
 
 1.120740  2012-03-14 16:36:02 EST5EDT
-    - added: EINTR, chunked, redirections, timestamp, CamelCase, CPANPLUS,
-      GUID, HTTPS, IETF, IRC, ISP, ISP's, JSON, modulino, SMTP, SSL, URI's,
-      UTC, wiki, analyses, locator
+    - added "EINTR", "chunked", "redirections", "timestamp"
 
 1.113620  2011-12-28 22:25:25 Europe/Vienna
     - added "Lapworth", "UTF", "aggregator", "aggregators", "probe's",
