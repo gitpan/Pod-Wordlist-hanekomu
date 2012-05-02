@@ -4,7 +4,7 @@ use warnings;
 
 package Pod::Wordlist::hanekomu;
 {
-  $Pod::Wordlist::hanekomu::VERSION = '1.121230';
+  $Pod::Wordlist::hanekomu::VERSION = '1.121231';
 }
 # ABSTRACT: Add words for spell checking POD
 use Test::Spelling;
@@ -181,6 +181,8 @@ our @stopwords = qw(
   precomputes
   prepends
   preprocessed
+  prereq
+  prereqs
   probe's
   redirections
   redispatch
@@ -241,7 +243,7 @@ Pod::Wordlist::hanekomu - Add words for spell checking POD
 
 =head1 VERSION
 
-version 1.121230
+version 1.121231
 
 =head1 SYNOPSIS
 
