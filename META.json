@@ -5,7 +5,7 @@
       "David Golden <dagolden@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300014, CPAN::Meta::Converter version 2.120630",
+   "generated_by" : "Dist::Zilla version 4.300016, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -32,7 +32,6 @@
       "test" : {
          "requires" : {
             "Carp" : "0",
-            "English" : "0",
             "File::Find" : "0",
             "File::Temp" : "0",
             "Scalar::Util" : "0",
@@ -43,7 +42,7 @@
    "provides" : {
       "Pod::Wordlist::hanekomu" : {
          "file" : "lib/Pod/Wordlist/hanekomu.pm",
-         "version" : "1.121231"
+         "version" : "1.121370"
       }
    },
    "release_status" : "stable",
@@ -59,6 +58,6 @@
          "web" : "http://github.com/dagolden/Pod-Wordlist-hanekomu"
       }
    },
-   "version" : "1.121231"
+   "version" : "1.121370"
 }
 

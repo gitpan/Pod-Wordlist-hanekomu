@@ -13,7 +13,6 @@ my %WriteMakefileArgs = (
   "AUTHOR" => "Marcel Gruenauer <marcel\@cpan.org>, David Golden <dagolden\@cpan.org>",
   "BUILD_REQUIRES" => {
     "Carp" => 0,
-    "English" => 0,
     "File::Find" => 0,
     "File::Temp" => 0,
     "Scalar::Util" => 0,
@@ -32,7 +31,7 @@ my %WriteMakefileArgs = (
     "utf8" => 0,
     "warnings" => 0
   },
-  "VERSION" => "1.121231",
+  "VERSION" => "1.121370",
   "test" => {
     "TESTS" => "t/*.t"
   }

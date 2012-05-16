@@ -1,5 +1,9 @@
 Revision history for Perl extension Pod-Wordlist-hanekomu
 
+1.121370  2012-05-16 17:02:39 America/New_York
+
+    - added: GUIDs, UUID, UUIDs, searchable
+
 1.121231  2012-05-02 16:12:36 America/New_York
 
     - added deserialized, parameterizable, pre, precompute,
