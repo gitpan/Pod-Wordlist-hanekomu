@@ -4,7 +4,7 @@ use warnings;
 
 package Pod::Wordlist::hanekomu;
 {
-  $Pod::Wordlist::hanekomu::VERSION = '1.121370';
+  $Pod::Wordlist::hanekomu::VERSION = '1.122840';
 }
 # ABSTRACT: Add words for spell checking POD
 use Test::Spelling;
@@ -71,6 +71,7 @@ our @tech_names = qw(
   MakeMaker
   Markdown
   Middleware
+  MongoDB
   mkdn
   modulino
   MVC
@@ -80,11 +81,13 @@ our @tech_names = qw(
   PHP
   Plack
   PSGI
+  RDBMS
   README
   ShipIt
   SMTP
   Spiffy
   SQL
+  SQLite
   SSL
   STDERR
   STDIN
@@ -147,6 +150,7 @@ our @stopwords = qw(
   hostname
   indices
   init
+  iteratively
   japanese
   Joseki
   kwalitee
@@ -237,8 +241,8 @@ add_stopwords(sort keys %words);
 $ENV{LANG} = 'C';
 1;
 
-
 __END__
+
 =pod
 
 =head1 NAME
@@ -247,7 +251,7 @@ Pod::Wordlist::hanekomu - Add words for spell checking POD
 
 =head1 VERSION
 
-version 1.121370
+version 1.122840
 
 =head1 SYNOPSIS
 
@@ -301,4 +305,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
