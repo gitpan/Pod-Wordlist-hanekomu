@@ -12,7 +12,7 @@ build_requires:
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300025, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Dist::Zilla version 4.300029, CPAN::Meta::Converter version 2.120921'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -21,7 +21,7 @@ name: Pod-Wordlist-hanekomu
 provides:
   Pod::Wordlist::hanekomu:
     file: lib/Pod/Wordlist/hanekomu.pm
-    version: 1.122840
+    version: 1.130240
 requires:
   Test::Spelling: 0
   perl: 5.008
@@ -32,4 +32,4 @@ resources:
   bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=Pod-Wordlist-hanekomu
   homepage: https://metacpan.org/module/Pod::Wordlist::hanekomu/
   repository: git://github.com/dagolden/Pod-Wordlist-hanekomu.git
-version: 1.122840
+version: 1.130240

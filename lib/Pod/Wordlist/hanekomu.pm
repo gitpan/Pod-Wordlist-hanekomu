@@ -4,7 +4,7 @@ use warnings;
 
 package Pod::Wordlist::hanekomu;
 {
-  $Pod::Wordlist::hanekomu::VERSION = '1.122840';
+  $Pod::Wordlist::hanekomu::VERSION = '1.130240';
 }
 # ABSTRACT: Add words for spell checking POD
 use Test::Spelling;
@@ -13,28 +13,25 @@ use utf8;
 our @person_names = qw(
   Achim
   Adam
-  Conway
   Cushing
-  Damian
+  Damian Conway
   Doherty
   Doran
   Eilam
   Ekker
   Florian
-  Gruenauer
+  Marcel Gruenauer
   Heinz
   Helmberger
   Hofstetter
   Lapworth
-  Marcel
   Mark
   Metheringham
-  Miyagawa
   Ran
-  Ricardo
-  Signes
+  Ricardo Signes rjbs
   Takesako
-  Tatsuhiko
+  Tatsuhiko Miyagawa
+  mst
 );
 our @tech_names = qw(
   AnyEvent
@@ -211,6 +208,8 @@ our @stopwords = qw(
   stringifications
   stringifies
   stringify
+  subclass
+  subclasses
   subdirectories
   subdirectory
   subobjects
@@ -219,6 +218,7 @@ our @stopwords = qw(
   timestamp
   tokenizes
   toolchain
+  tuple
   unblessed
   unshifts
   username
@@ -251,7 +251,7 @@ Pod::Wordlist::hanekomu - Add words for spell checking POD
 
 =head1 VERSION
 
-version 1.122840
+version 1.130240
 
 =head1 SYNOPSIS
 
