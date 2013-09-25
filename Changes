@@ -1,5 +1,10 @@
 Revision history for Perl extension Pod-Wordlist-hanekomu
 
+1.132680  2013-09-25 14:47:26 America/New_York
+
+    - marked as deprecated now that words are merged
+      into Pod::Wordlist
+
 1.130240  2013-01-23 20:27:57 America/New_York
 
 1.122840  2012-10-10 10:25:10 America/New_York

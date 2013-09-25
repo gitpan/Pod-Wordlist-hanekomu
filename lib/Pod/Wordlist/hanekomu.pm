@@ -4,9 +4,9 @@ use warnings;
 
 package Pod::Wordlist::hanekomu;
 {
-  $Pod::Wordlist::hanekomu::VERSION = '1.130240';
+  $Pod::Wordlist::hanekomu::VERSION = '1.132680';
 }
-# ABSTRACT: Add words for spell checking POD
+# ABSTRACT: Add words for spell checking POD (DEPRECATED)
 use Test::Spelling;
 set_spell_cmd 'aspell list';
 use utf8;
@@ -34,6 +34,7 @@ our @person_names = qw(
   mst
 );
 our @tech_names = qw(
+  AES
   AnyEvent
   AOP
   API
@@ -247,11 +248,11 @@ __END__
 
 =head1 NAME
 
-Pod::Wordlist::hanekomu - Add words for spell checking POD
+Pod::Wordlist::hanekomu - Add words for spell checking POD (DEPRECATED)
 
 =head1 VERSION
 
-version 1.130240
+version 1.132680
 
 =head1 SYNOPSIS
 
@@ -267,6 +268,14 @@ spell checking, that is, words that should be ignored by the spell check.
 The stopword list includes some CPAN author names, technical terms (e.g.  JSON,
 URI) and other commonly-used words not included in the default word list (e.g.
 mixin, munging).
+
+=head1 DEPRECATION
+
+All non-name words from this list have been merged into the master L<Pod::Wordlist>
+module.  Names are often grabbed directly from author and contributor metadata
+by relevant tools and are unlikely to be as necessary.
+
+Therefore, this list is no longer maintained.
 
 =head1 INSTALLATION
 

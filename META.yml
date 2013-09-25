@@ -1,18 +1,19 @@
 ---
-abstract: 'Add words for spell checking POD'
+abstract: 'Add words for spell checking POD (DEPRECATED)'
 author:
   - 'Marcel Gruenauer <marcel@cpan.org>'
   - 'David Golden <dagolden@cpan.org>'
 build_requires:
   Carp: 0
-  File::Find: 0
-  File::Temp: 0
+  File::Spec: 0
+  IO::Handle: 0
+  IPC::Open3: 0
   Scalar::Util: 0
   Test::More: 0.94
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300029, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Dist::Zilla version 4.300039, CPAN::Meta::Converter version 2.132620'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -21,7 +22,7 @@ name: Pod-Wordlist-hanekomu
 provides:
   Pod::Wordlist::hanekomu:
     file: lib/Pod/Wordlist/hanekomu.pm
-    version: 1.130240
+    version: 1.132680
 requires:
   Test::Spelling: 0
   perl: 5.008
@@ -32,4 +33,4 @@ resources:
   bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=Pod-Wordlist-hanekomu
   homepage: https://metacpan.org/module/Pod::Wordlist::hanekomu/
   repository: git://github.com/dagolden/Pod-Wordlist-hanekomu.git
-version: 1.130240
+version: 1.132680
